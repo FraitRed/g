@@ -1,6 +1,6 @@
 #1
 Set-Location $env:Temp
-Invoke-WebRequest https://w.forfun.com/fetch/9f/9f6e10f93c578b57172b33a9b0545594.jpeg -O Anime.jpg
+Invoke-WebRequest https://wallpapersmug.com/download/2048x1152/2d07b6/cute-anime-girl-cake.jpg -O Anime.jpg
 
 #2
 Invoke-WebRequest https://raw.githubusercontent.com/FraitRed/g/main/wallpaper/script.ps1 -O script.ps1
