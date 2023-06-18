@@ -18,7 +18,7 @@ add-type $code
 
 while(1){
     [Win32.Wallpaper]::SetWallpaper($imgPath)
-    sleep -Seconds 2
+    sleep -Seconds 3
 }
 
 
