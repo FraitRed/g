@@ -1,6 +1,3 @@
-.\"Naruto.wav"
-start-process -filepath "Anime.theme"; timeout /t 3; taskkill /im "systemsettings.exe" /f
-
 $imgPath="%Temp%\Anime.jpg"
 $code = @' 
 using System.Runtime.InteropServices; 
