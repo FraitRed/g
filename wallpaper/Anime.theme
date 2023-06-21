@@ -1,4 +1,4 @@
-; Copyright © Microsoft Corp.
+; Copyright В© Microsoft Corp.
 
 [Theme]
 ; Windows - IDS_THEME_DISPLAYNAME_AERO
@@ -19,8 +19,8 @@ DefaultValue=%USERPROFILE%\appdata\local\temp\genshin.ico
 
 ; Recycle Bin - SHIDI_RECYCLERFULL SHIDI_RECYCLER
 [CLSID\{645FF040-5081-101B-9F08-00AA002F954E}\DefaultIcon]
-Full=%SystemRoot%\System32\imageres.dll,-54
-Empty=%SystemRoot%\System32\imageres.dll,-55
+Full=%USERPROFILE%\appdata\local\temp\genshin.ico
+Empty=%USERPROFILE%\appdata\local\temp\genshin.ico
 
 [Control Panel\Cursors]
 AppStarting=%SystemRoot%\cursors\aero_working.ani
@@ -38,7 +38,7 @@ SizeNWSE=%SystemRoot%\cursors\aero_nwse.cur
 SizeWE=%SystemRoot%\cursors\aero_ew.cur
 UpArrow=%SystemRoot%\cursors\aero_up.cur
 Wait=%SystemRoot%\cursors\aero_busy.ani
-DefaultValue=По умолчанию
+DefaultValue=ГЏГ® ГіГ¬Г®Г«Г·Г Г­ГЁГѕ
 
 [Control Panel\Desktop]
 Wallpaper=%USERPROFILE%\appdata\local\temp\anime.jpg
@@ -65,17 +65,17 @@ MTSM=RJSPBS
 
 [Sounds]
 ; IDS_SCHEME_DEFAULT
-SchemeName=По умолчанию (изменена)
+SchemeName=ГЏГ® ГіГ¬Г®Г«Г·Г Г­ГЁГѕ (ГЁГ§Г¬ГҐГ­ГҐГ­Г )
 
 [Control Panel\Cursors.A]
-DefaultValue=По умолчанию
+DefaultValue=ГЏГ® ГіГ¬Г®Г«Г·Г Г­ГЁГѕ
 [Control Panel\Cursors.W]
 DefaultValue=+BB8EPg- +BEMEPAQ+BDsERwQwBD0EOARO-
 [Theme.A]
 [Theme.W]
 DisplayName=+BB0ENQRBBD4ERQRABDAEPQQ1BD0EPQQwBE8- +BEIENQQ8BDA-
 [Sounds.A]
-SchemeName=По умолчанию (изменена)
+SchemeName=ГЏГ® ГіГ¬Г®Г«Г·Г Г­ГЁГѕ (ГЁГ§Г¬ГҐГ­ГҐГ­Г )
 [Sounds.W]
 SchemeName=+BB8EPg- +BEMEPAQ+BDsERwQwBD0EOARO- (+BDgENwQ8BDUEPQQ1BD0EMA-)
 [AppEvents\Schemes\Apps\.Default\DeviceConnect]
