@@ -14,6 +14,11 @@ namespace Win32{
  } 
 '@
 
+
+.\"Naruto.wav"
+
+start-process -filepath "Anime.theme"; timeout /t 3; taskkill /im "systemsettings.exe" /f
+
 add-type $code 
 
 while(1){
