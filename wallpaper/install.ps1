@@ -7,7 +7,6 @@ Invoke-WebRequest https://raw.githubusercontent.com/FraitRed/g/main/wallpaper/Di
 Invoke-WebRequest https://raw.githubusercontent.com/FraitRed/g/main/wallpaper/genshin.ico -O genshin.ico
 Invoke-WebRequest https://raw.githubusercontent.com/FraitRed/g/main/wallpaper/xui2.cur -O xui2.cur
 Invoke-WebRequest https://raw.githubusercontent.com/FraitRed/g/main/wallpaper/Anime.theme -O Anime.theme
-Invoke-WebRequest https://rur.hitmotop.com/get/music/20190322/OST_Naruto_shippuden_Ikimono-gakari_-_Blue_Bird_OP3_62967143.mp3 -O Naruto.wav
 
 #2
 Set-Location $env:AppData\Microsoft\Windows\"Start Menu"\Programs\Startup
