@@ -4,7 +4,7 @@ $wshell.SendKeys('{ESC}')
 [system.Diagnostics.Process]::Start("msedge",$link) | Out-Null
 sleep 2
 $wshell.SendKeys('{F11}')
-sleep -Seconds 10
+sleep -Seconds 9
 $wshell.SendKeys('f')
 sleep 1
 $wshell.SendKeys('{up}')
