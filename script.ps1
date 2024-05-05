@@ -2,9 +2,9 @@ $wshell = New-Object -ComObject wscript.shell;
 function yut {
 $wshell.SendKeys('{ESC}')
 [system.Diagnostics.Process]::Start("msedge",$link) | Out-Null
-sleep 1
+sleep 2
 $wshell.SendKeys('{F11}')
-sleep -Seconds 7
+sleep -Seconds 10
 $wshell.SendKeys('f')
 sleep 1
 $wshell.SendKeys('{up}')
