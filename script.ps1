@@ -1,7 +1,7 @@
 $wshell = New-Object -ComObject wscript.shell;
 function yut {
 [system.Diagnostics.Process]::Start("msedge",$link) | Out-Null
-sleep -Seconds 5
+sleep -Seconds 7
 $wshell.SendKeys('f')
 }
 $a = $True
