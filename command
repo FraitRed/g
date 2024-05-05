@@ -1,1 +1,1 @@
-ipconfig
+$wshell.SendKeys('%{F4}')
