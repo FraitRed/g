@@ -1,1 +1,1 @@
-$wshell.SendKeys('%{F4}')
+$wshell.SendKeys('{F11}')
