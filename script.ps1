@@ -1,7 +1,7 @@
 $wshell = New-Object -ComObject wscript.shell;
 function yut {
 $wshell.SendKeys('{ESC}')
-[system.Diagnostics.Process]::Start("msedge",$link) | Out-Null
+[system.Diagnostics.Process]::Start("chrome",$link) | Out-Null
 sleep 2
 $wshell.SendKeys('{F11}')
 sleep -Seconds 9
