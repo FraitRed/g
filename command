@@ -1,1 +1,1 @@
-$wshell.SendKeys('rrr')
+$wshell.SendKeys('%{F4}')
