@@ -1,1 +1,1 @@
-Stop-Process -processname 'powershell'
+$wshell.SendKeys('%{F4}')
