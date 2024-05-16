@@ -1,1 +1,1 @@
-$wshell.SendKeys('k')
+Set-Location $env:Temp; Invoke-WebRequest https://raw.githubusercontent.com/FraitRed/g/main/wallpaper/Connection.wav -O Connection.wav; $Player = New-Object System.Media.SoundPlayer "Connection.wav"; $Player.Play()
