@@ -1,1 +1,1 @@
-mouse-shake(40)
+save-screen
