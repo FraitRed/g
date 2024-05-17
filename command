@@ -1,1 +1,1 @@
-save-screen
+stop-process -processname "powershell"
