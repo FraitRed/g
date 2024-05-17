@@ -1,1 +1,1 @@
-[audio]::Volume  = 0.2
+mouse-shake(40)
